@@ -11,6 +11,10 @@ repositories {
     mavenCentral()
 }
 
+//dependencies {
+//    testImplementation group: 'junit', name: 'junit', version: '4.12'
+//}
 dependencies {
-    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
 }
